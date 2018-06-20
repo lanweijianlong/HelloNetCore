@@ -1,0 +1,15 @@
+version: '3'
+
+services:
+  hellonetcore:
+    image: hellonetcore
+    build:
+      context: .
+      dockerfile: HelloNetCore\Dockerfile
+
+  helloapi:
+    image: helloapi
+    build:
+      context: .
+      dockerfile: HelloApi\Dockerfile
+
